@@ -44,12 +44,12 @@ function getList(params, path1, pathname) {
         } else {
             // 获取名字
             const name = path.basename(params[file])
-            // 排除非 md 文件
+            // 排除非 docs 文件
             const suffix = path.extname(params[file])
             if (suffix !== '.md') {
                 continue
             }
-            const link = `${pathname.replace('docs', "")}/${name.replace('.md', "")}`
+            const link = `${pathname.replace('/docs', "")}/${name.replace('.md', "")}`
             const text = name.replace('.md', "")
             res.push({
                 text: text,

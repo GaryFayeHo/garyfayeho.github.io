@@ -11,7 +11,7 @@ hero:
   actions:
     - theme: brand
       text: 进入文档
-      link: /md/介绍/准备
+      link: /docs/介绍/准备
 
 features:
     - title: 学习AI
