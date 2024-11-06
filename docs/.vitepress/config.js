@@ -7,12 +7,9 @@ export default {
     description: "何嘎嘎用来写技术文档的地方", // 网站描述
     appearance: true,
     lastUpdated: true,
-    head: [
-        // 配置网站的图标（显示在浏览器的 tab 上）
-        ["link", { rel: "icon", href: `favicon.ico` }],
-    ],
+    head: [["link", { rel: "icon", href: `favicon.ico` }]],
     themeConfig: {
-        siteTitle: "何嘎嘎的技术文档",
+        // siteTitle: "何嘎嘎的技术文档",
         logo: "/logo.jpeg",
         docFooter: {
             prev: "上一页",
@@ -21,6 +18,22 @@ export default {
         outlineTitle: '大纲',
         search: {
             provider: "local",
+            options: {
+                translations: {
+                    button: {
+                        buttonText: "搜索文档",
+                        buttonAriaLabel: "搜索文档",
+                    },
+                    modal: {
+                        noResultsText: "无法找到相关结果",
+                        resetButtonTitle: "清除查询条件",
+                        footer: {
+                            selectText: "选择",
+                            navigateText: "切换",
+                        },
+                    },
+                },
+            },
         },
         socialLinks: [
             { icon: 'github', link: 'https://github.com/GaryFayeHo' },
@@ -33,7 +46,14 @@ export default {
             message: "Patience is bitter, but its fruit is sweet",
             copyright: "Copyright ©何嘎嘎",
         },
-    }
+    },
+    //markdown配置
+    markdown: {
+        image: {
+            // 开启图片懒加载
+            lazyLoading: true,
+        },
+    },
 };
 
 
