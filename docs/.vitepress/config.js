@@ -49,6 +49,7 @@ export default {
     },
     //markdown配置
     markdown: {
+        math: true,
         image: {
             // 开启图片懒加载
             lazyLoading: true,
