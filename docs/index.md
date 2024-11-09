@@ -17,7 +17,7 @@ features:
     - title: 学习AI目标
       details: 深度学习、卷积神经网络、循环神经网络
     - title: 扇贝打卡
-      details: 第40天
+      details: 第46天
 ---
 
 
